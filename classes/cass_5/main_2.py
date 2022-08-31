@@ -45,7 +45,7 @@ print(f'Train R2: {model.score(x_test, y_test)}')
 x2 = np.asanyarray(data.drop(['id', 'date', 'price','floors', 'sqft_lot', 'yr_renovated'], axis=1))
 std_scaler.fit(x2)
 newTest2= std_scaler.transform(x2)
-model2 = Pipeline([('poly', PolynomialFeatures(degree=2, include_bias=False)),('ridge', ElasticNet(alpha=1e-02, max_iter=2000))])
+model2 = Pipeline([('poly', PolynomialFeatures(degree=3, include_bias=False)),('ridge', Ridge(alpha=1e-02))])
 x_train2, x_test2, y_train2, y_test2 = train_test_split(newTest2,y)
 
 model2.fit(x_train2, y_train2)

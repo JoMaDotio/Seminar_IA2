@@ -23,7 +23,7 @@ Class Tree params:
 Class KNN
     K mayor la K sub entrena, menor la k sobre entrena
     
-Class SUR
+Class SvR
     gamma='scale'
     kernel='rbf'
     c entre mas grande sea se sobre entrena, entre mas pequeña se sub entrena

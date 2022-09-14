@@ -44,9 +44,4 @@ F1 = 2(P_i * R_i / P_i + R_1) armonic mean over precision and recall
 
 Curvas ROC
 
-
-
-
-
-
 """

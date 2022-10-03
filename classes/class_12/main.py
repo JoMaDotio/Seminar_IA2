@@ -3,6 +3,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.manifold import TSNE
 
+
+#projector.tensorflow.org
+
 data = pd.read_csv('../../data/mnist_784.csv')
 n_samples = 3000
 
